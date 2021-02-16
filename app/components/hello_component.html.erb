@@ -1,0 +1,14 @@
+<h1>Hello template</h1>
+
+<%# Incorrect version using the helpers method %>
+<%= helpers.a_link '/' do %>
+  Content inside the button
+<% end %>
+
+<br>
+<br>
+
+<%# Correct version using the included helpers %>
+<%= a_link '/' do %>
+  Content inside the button
+<% end %>
